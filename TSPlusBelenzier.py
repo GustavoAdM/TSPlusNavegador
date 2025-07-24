@@ -302,6 +302,7 @@ class NavegadorTSPlus(QMainWindow):
         settings.setAttribute(QWebEngineSettings.ScreenCaptureEnabled, True)
         settings.setAttribute(
             QWebEngineSettings.AllowRunningInsecureContent, True)
+        settings.setAttribute(QWebEngineSettings.PdfViewerEnabled, False)
 
         # Configurações de cache
         profile.setHttpCacheType(QWebEngineProfile.MemoryHttpCache)
