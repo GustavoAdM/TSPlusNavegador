@@ -267,7 +267,7 @@ class NavegadorTSPlus(QMainWindow):
         """Trata o resultado da tentativa de autopreenchimento"""
         if not sucesso and tentativas_restantes > 1:
             # Aumenta delay progressivamente
-            novo_delay = 500 * (4 - tentativas_restantes)
+            novo_delay = 500 * (1 - tentativas_restantes)
             self.tentar_preenchimento_automatico(
                 tentativas_restantes - 1, novo_delay)
 
